@@ -372,7 +372,7 @@ document.getElementById('vender').addEventListener('click', () => {
     // Obtém o tipo de pagamento selecionado
     const tipoPagamento = document.querySelector('input[name="tipoPagamento"]:checked').value;
     
-    const vendasDinheiro = parseFloat(localStorage.getItem('vendasDinheiro'));
+    let vendasDinheiro = parseFloat(localStorage.getItem('vendasDinheiro'));
     vendasDinheiro = isNaN(vendasDinheiro) ? 0 : vendasDinheiro;
     vendasDinheiro = parseFloat(localStorage.getItem('vendasDinheiro')) || 0;
 
